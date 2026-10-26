@@ -1,0 +1,13 @@
+Place your CV here
+------------------
+
+Save your CV PDF in this folder as:
+
+    Ephron_Twagirimana_CV.pdf
+
+The "Download CV" button in the hero section links to /cv/Ephron_Twagirimana_CV.pdf.
+If you use a different file name, update profile.cv.path (and label) in
+src/data/profile.js.
+
+Until a real PDF exists here, the Download CV button shows a setup notice
+instead of a broken download — no fake files are served.
