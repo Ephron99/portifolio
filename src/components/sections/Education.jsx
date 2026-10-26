@@ -7,13 +7,13 @@ export default function Education() {
   return (
     <Section
       id="education"
-      eyebrow="05 · Education & Certifications"
-      title="Academic foundation and professional credentials."
+      eyebrow="Education & Certifications"
+      title="Academic foundation and credentials."
     >
       <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
         {/* Education timeline */}
         <div>
-          <h3 className="mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-navy-700 dark:text-navy-200">
+          <h3 className="mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-navy-700 dark:text-navy-200">
             <BookOpen size={16} className="text-accent-deep dark:text-accent-soft" aria-hidden="true" />
             Education
           </h3>
@@ -39,7 +39,7 @@ export default function Education() {
                 </span>
                 <div className="card p-5">
                   <div className="flex flex-wrap items-start justify-between gap-2">
-                    <h4 className="text-base font-semibold text-navy-900 dark:text-white">{degree}</h4>
+                    <h4 className="font-serif text-base font-semibold text-navy-900 dark:text-white">{degree}</h4>
                     <span className="chip whitespace-nowrap">
                       {period || (
                         <em className="not-italic opacity-70">Year optional</em>
@@ -60,7 +60,7 @@ export default function Education() {
 
         {/* Certifications */}
         <div>
-          <h3 className="mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-navy-700 dark:text-navy-200">
+          <h3 className="mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-navy-700 dark:text-navy-200">
             <Award size={16} className="text-accent-deep dark:text-accent-soft" aria-hidden="true" />
             Certifications
           </h3>
@@ -83,7 +83,7 @@ export default function Education() {
                 <span className="chip mb-3 inline-flex !border-accent/40 !bg-accent/10 !text-accent-deep dark:!text-accent-soft">
                   Certified
                 </span>
-                <h4 className="text-base font-semibold text-navy-900 dark:text-white">{name}</h4>
+                <h4 className="font-serif text-base font-semibold text-navy-900 dark:text-white">{name}</h4>
                 <p className="mt-1 text-sm text-navy-600 dark:text-navy-300">{issuer}</p>
                 <dl className="mt-4 space-y-1.5 text-xs text-navy-500 dark:text-navy-400">
                   <div className="flex gap-2">

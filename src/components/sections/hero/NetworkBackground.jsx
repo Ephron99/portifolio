@@ -17,8 +17,8 @@ export default function NetworkBackground() {
     let width = 0;
     let height = 0;
 
-    const NODE_COUNT = 46;
-    const LINK_DIST = 130;
+    const NODE_COUNT = 34;
+    const LINK_DIST = 140;
 
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -44,8 +44,8 @@ export default function NetworkBackground() {
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
       const dark = isDark();
-      const lineColor = dark ? '103,232,249' : '15,30,60'; // cyan on dark, navy on light
-      const dotColor = dark ? '103,232,249' : '8,145,178';
+      const lineColor = dark ? '213,188,138' : '15,30,60'; // soft gold on dark, navy on light
+      const dotColor = dark ? '213,188,138' : '140,109,63';
 
       for (const n of nodes) {
         if (!reducedMotion) {
@@ -63,7 +63,7 @@ export default function NetworkBackground() {
           const b = nodes[j];
           const d = Math.hypot(a.x - b.x, a.y - b.y);
           if (d < LINK_DIST) {
-            const alpha = (1 - d / LINK_DIST) * (dark ? 0.22 : 0.12);
+            const alpha = (1 - d / LINK_DIST) * (dark ? 0.14 : 0.08);
             ctx.strokeStyle = `rgba(${lineColor},${alpha})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
@@ -75,7 +75,7 @@ export default function NetworkBackground() {
       }
 
       // dots
-      ctx.fillStyle = `rgba(${dotColor},${dark ? 0.5 : 0.35})`;
+      ctx.fillStyle = `rgba(${dotColor},${dark ? 0.38 : 0.25})`;
       for (const n of nodes) {
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
@@ -107,7 +107,7 @@ export default function NetworkBackground() {
     <canvas
       ref={canvasRef}
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 h-full w-full opacity-70"
+      className="pointer-events-none absolute inset-0 h-full w-full opacity-60"
     />
   );
 }

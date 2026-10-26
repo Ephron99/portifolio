@@ -15,27 +15,27 @@ const values = [
   {
     icon: BookOpen,
     title: 'Continuous learning',
-    text: 'Currently deepening my expertise in IoT embedded systems at postgraduate level while staying current with backend practice.',
+    text: 'Postgraduate IoT studies alongside active backend practice.',
   },
   {
     icon: Bug,
     title: 'Problem-solving',
-    text: 'I approach bugs and requirements methodically — reproduce, isolate, fix, and verify — from gate systems to sensor networks.',
+    text: 'Reproduce, isolate, fix, verify — from gate systems to sensor networks.',
   },
   {
     icon: Code2,
     title: 'Clean, maintainable code',
-    text: 'Readable structure, sensible naming and documented decisions, because software is read far more often than it is written.',
+    text: 'Readable structure and documented decisions; software is read more than written.',
   },
   {
     icon: Handshake,
     title: 'Collaboration & accountability',
-    text: 'Teaching at Kivu Hills Academy and shipping in teams at SANTECH and Katheos taught me to own my work and lift others up.',
+    text: 'Shipping in teams and teaching classes taught me to own my work and lift others up.',
   },
   {
     icon: Lightbulb,
     title: 'Practical innovation',
-    text: 'Interesting ideas only matter once they run on real hardware with real users — I prototype small, test early, and iterate.',
+    text: 'Prototype small, test early, iterate — ideas count once they run in the real world.',
   },
 ];
 
@@ -49,19 +49,16 @@ export default function About() {
   return (
     <Section
       id="about"
-      eyebrow="01 · About Me"
+      eyebrow="About Me"
       title="Backend engineer by practice, IoT explorer by curiosity."
       intro={
         <>
-          I build software that businesses rely on every day. At{' '}
-          <strong className="font-semibold text-navy-900 dark:text-white">SANTECH Ltd</strong> I
-          develop and maintain Java desktop and web applications with MySQL-backed data layers —
-          systems like the E-Visitors platform that manage real visitor traffic at gates. Alongside
-          professional work, my <strong className="font-semibold text-navy-900 dark:text-white">MSc
-          in IoT Embedded Computing Systems</strong> at the University of Rwanda&apos;s African
-          Center of Excellence in Internet of Things (ACEIoT) pulls me toward connected devices:
-          sensor networks, MQTT messaging, fog computing and TinyML research on low-power edge
-          intelligence.
+          I build software businesses rely on — Java desktop and web applications with
+          MySQL-backed data layers, like the E-Visitors platform I develop at{' '}
+          <strong className="font-semibold text-navy-900 dark:text-white">SANTECH Ltd</strong>.
+          My <strong className="font-semibold text-navy-900 dark:text-white">MSc in IoT Embedded
+          Computing Systems</strong> at the University of Rwanda (ACEIoT) extends that work to
+          connected devices: sensors, MQTT, fog computing and TinyML research.
         </>
       }
     >
@@ -86,7 +83,7 @@ export default function About() {
       <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
         {/* Values */}
         <div>
-          <h3 className="mb-5 text-lg font-semibold text-navy-900 dark:text-white">
+          <h3 className="mb-5 font-serif text-lg font-semibold text-navy-900 dark:text-white">
             Professional values
           </h3>
           <ul className="space-y-4">
@@ -124,14 +121,14 @@ export default function About() {
           >
             <div className="mb-2 flex items-center gap-2">
               <Target size={16} className="text-accent-deep dark:text-accent-soft" aria-hidden="true" />
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-navy-700 dark:text-navy-200">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.15em] text-navy-700 dark:text-navy-200">
                 Career objective
               </h3>
             </div>
             <p className="text-sm leading-relaxed text-navy-600 dark:text-navy-300">
-              To grow as a Java backend engineer — designing reliable, maintainable services for
-              real businesses — while applying my postgraduate IoT knowledge to bring intelligent,
-              connected solutions from prototype to production across the region and beyond.
+              To grow as a Java backend engineer designing reliable, maintainable services —
+              while applying my IoT knowledge to bring intelligent, connected solutions from
+              prototype to production.
             </p>
           </motion.div>
 
@@ -144,15 +141,15 @@ export default function About() {
           >
             <div className="mb-2 flex items-center gap-2">
               <GraduationCap size={16} className="text-accent-deep dark:text-accent-soft" aria-hidden="true" />
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-navy-700 dark:text-navy-200">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.15em] text-navy-700 dark:text-navy-200">
                 A teacher&apos;s foundation
               </h3>
             </div>
             <p className="text-sm leading-relaxed text-navy-600 dark:text-navy-300">
-              As a Certified TVET Trainer at Kivu Hills Academy (March 2023 – May 2024), I taught
-              programming fundamentals and guided students through practical application
-              development. Explaining code to others sharpened how I write it myself: clear
-              structure, honest comments, and solutions students can actually follow.
+              As a Certified TVET Trainer at Kivu Hills Academy (2023–2024), I taught programming
+              fundamentals and guided students through real applications. Explaining code to others
+              sharpened how I write it: clear structure, honest comments, solutions people can
+              follow.
             </p>
           </motion.div>
         </div>

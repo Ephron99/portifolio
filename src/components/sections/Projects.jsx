@@ -34,9 +34,9 @@ function ProjectCard({ project, onOpen, index }) {
 
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-1 flex items-center justify-between gap-2">
-          <h3 className="text-base font-semibold text-navy-900 dark:text-white">{project.title}</h3>
+          <h3 className="font-serif text-base font-semibold text-navy-900 dark:text-white">{project.title}</h3>
         </div>
-        <p className="text-xs font-medium uppercase tracking-wide text-accent-deep dark:text-accent-soft">
+        <p className="text-xs font-medium uppercase tracking-[0.15em] text-accent-deep dark:text-accent-soft">
           {project.status}
         </p>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-navy-600 dark:text-navy-300">
@@ -109,9 +109,9 @@ export default function Projects() {
   return (
     <Section
       id="projects"
-      eyebrow="03 · Projects"
-      title="Selected work, from production systems to research prototypes."
-      intro="Filter by domain or search by project name and technology. Each card opens a full case study — architecture, role, challenges and what is genuinely implemented versus planned."
+      eyebrow="Projects"
+      title="Selected work — production systems to research prototypes."
+      intro="Filter by domain or search by name and technology. Each card opens a full case study: architecture, role, challenges, and what is genuinely implemented versus planned."
     >
       {/* Controls */}
       <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">

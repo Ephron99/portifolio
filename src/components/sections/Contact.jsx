@@ -145,9 +145,9 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="06 · Contact"
+      eyebrow="Contact"
       title="Let's Build Something Meaningful."
-      intro="I am open to software development opportunities, Java backend roles, freelance projects, IoT collaborations, and innovative technology initiatives."
+      intro="Open to software development opportunities, Java backend roles, freelance projects, and IoT collaborations."
       className="bg-navy-50/50 dark:bg-navy-900/30"
     >
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">

@@ -57,13 +57,13 @@ export default function Navbar() {
       >
         <a
           href="#home"
-          className="flex items-center gap-2 font-mono text-sm font-semibold tracking-tight text-navy-900 dark:text-white"
+          className="flex items-center gap-2.5 text-sm tracking-tight text-navy-900 dark:text-white"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy-900 font-mono text-xs text-accent-soft dark:bg-accent dark:text-navy-950">
+          <span className="flex h-8 w-8 items-center justify-center rounded-md border border-accent/50 font-serif text-xs font-semibold text-accent-deep dark:text-accent-soft">
             {initials}
           </span>
-          <span className="hidden sm:inline">{profile.name}</span>
+          <span className="hidden font-serif font-semibold sm:inline">{profile.name}</span>
         </a>
 
         {/* Desktop links */}

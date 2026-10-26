@@ -4,6 +4,10 @@ import { profile } from '../data/profile';
 /**
  * Checks whether the CV file actually exists in /public so the "Download CV"
  * button never silently 404s. Returns { ready, checking }.
+ *
+ * Note: dev servers with SPA fallback answer missing files with 200 + HTML,
+ * so a plain res.ok check is not enough — the response must be a PDF (or at
+ * least not HTML).
  */
 export function useCvStatus() {
   const [ready, setReady] = useState(null); // null = unknown/checking
@@ -13,7 +17,9 @@ export function useCvStatus() {
     (async () => {
       try {
         const res = await fetch(profile.cv.path, { method: 'HEAD' });
-        if (!cancelled) setReady(res.ok);
+        const type = res.headers.get('content-type') || '';
+        const isRealFile = res.ok && !type.includes('text/html');
+        if (!cancelled) setReady(isRealFile);
       } catch {
         if (!cancelled) setReady(false);
       }

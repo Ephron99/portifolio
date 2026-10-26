@@ -51,7 +51,7 @@ export default function ProjectModal({ project, onClose }) {
 
   const Block = ({ title, children }) => (
     <div>
-      <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-navy-700 dark:text-navy-200">
+      <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-navy-700 dark:text-navy-200">
         {title}
       </h3>
       {children}
@@ -99,7 +99,7 @@ export default function ProjectModal({ project, onClose }) {
               {project.status}
             </span>
           </div>
-          <h2 id="project-modal-title" className="text-2xl font-bold text-navy-900 dark:text-white">
+          <h2 id="project-modal-title" className="font-serif text-2xl font-semibold text-navy-900 dark:text-white">
             {project.title}
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-navy-600 dark:text-navy-300">

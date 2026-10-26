@@ -39,13 +39,13 @@
   }
 
   .card {
-    @apply rounded-xl border border-navy-100 bg-white shadow-sm transition-colors
-      hover:border-accent/40 dark:border-navy-800 dark:bg-navy-900;
+    @apply rounded-lg border border-navy-100 bg-white shadow-sm transition-colors
+      hover:border-accent/50 dark:border-navy-800 dark:bg-navy-900;
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5
-      text-sm font-semibold transition-all duration-200 focus-visible:ring-2
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5
+      text-sm font-medium tracking-wide transition-all duration-200 focus-visible:ring-2
       disabled:cursor-not-allowed disabled:opacity-60;
   }
 
@@ -66,9 +66,9 @@
   }
 
   .chip {
-    @apply inline-flex items-center rounded-full border border-navy-100 bg-navy-50
-      px-2.5 py-0.5 text-xs font-medium text-navy-700
-      dark:border-navy-700 dark:bg-navy-800/60 dark:text-navy-200;
+    @apply inline-flex items-center rounded-full border border-navy-100 bg-transparent
+      px-2.5 py-0.5 text-xs font-medium text-navy-600
+      dark:border-navy-700 dark:bg-transparent dark:text-navy-300;
   }
 
   .input-field {

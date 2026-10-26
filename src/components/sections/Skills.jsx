@@ -6,9 +6,9 @@ export default function Skills() {
   return (
     <Section
       id="skills"
-      eyebrow="02 · Skills"
+      eyebrow="Skills"
       title="The technologies I work with."
-      intro="Grouped by domain — everything listed here is something I can discuss in depth and demonstrate in code."
+      intro="Grouped by domain — everything here is something I can discuss in depth and demonstrate in code."
       className="bg-navy-50/50 dark:bg-navy-900/30"
     >
       <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
@@ -22,10 +22,10 @@ export default function Skills() {
             className="card p-6"
           >
             <div className="mb-1 flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-900 text-accent-soft dark:bg-accent dark:text-navy-950">
+              <span className="flex h-10 w-10 items-center justify-center rounded-md border border-accent/40 text-accent-deep dark:text-accent-soft">
                 <Icon size={18} aria-hidden="true" />
               </span>
-              <h3 className="text-base font-semibold text-navy-900 dark:text-white">{name}</h3>
+              <h3 className="font-serif text-base font-semibold text-navy-900 dark:text-white">{name}</h3>
             </div>
             <p className="mb-4 text-xs leading-relaxed text-navy-500 dark:text-navy-400">{blurb}</p>
 

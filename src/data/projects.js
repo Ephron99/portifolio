@@ -29,7 +29,7 @@ export const projects = [
     id: 'e-visitors',
     title: 'E-Visitors System (EVS)',
     summary:
-      'Visitor and gate management platform with registration, attendance, appointments, document capture and reporting.',
+      'Visitor and gate management: registration, attendance, appointments, document capture and reporting.',
     category: 'Java Backend',
     technologies: ['Java', 'MySQL', 'Java Web Technologies', 'OCR'],
     image: '/images/projects/evisitors.jpg',
@@ -78,7 +78,7 @@ export const projects = [
     id: 'voltage-drop',
     title: 'Voltage-Drop',
     summary:
-      'Full-stack web application with a React frontend, Node.js/Express backend and MySQL database, deployed to the cloud.',
+      'Full-stack application: React frontend, Node.js/Express API, MySQL — deployed to the cloud.',
     category: 'Web Development',
     technologies: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'GitHub', 'Cloud Deployment'],
     image: '/images/projects/voltage-drop.jpg',
@@ -124,7 +124,7 @@ export const projects = [
     id: 'smart-irrigation',
     title: 'IoT Smart Monitoring & Irrigation',
     summary:
-      'ESP8266-based prototype monitoring temperature, humidity, soil moisture and light, with Blynk alerts and automated pump control.',
+      'ESP8266 prototype monitoring temperature, humidity, soil and light — with Blynk alerts and automatic pump control.',
     category: 'IoT & Embedded',
     technologies: ['ESP8266 / NodeMCU', 'DHT11', 'Soil Moisture Sensor', 'LDR', 'Blynk', 'Embedded C'],
     image: '/images/projects/smart-irrigation.jpg',
@@ -166,7 +166,7 @@ export const projects = [
     id: 'tinyml-bee-swarm',
     title: 'TinyML-Based Acoustic Monitoring for Early Honeybee Swarm Detection',
     summary:
-      'MSc research at ACEIoT investigating low-power acoustic monitoring and lightweight ML on edge devices to detect honeybee swarming.',
+      'MSc research at ACEIoT: low-power acoustic monitoring and lightweight ML on edge devices to detect honeybee swarming.',
     category: 'Academic Research',
     technologies: ['TinyML', 'Acoustic Data Processing', 'Lightweight CNNs', 'Embedded Systems', 'Microcontrollers', 'IoT'],
     image: '/images/projects/tinyml-bees.jpg',
@@ -211,7 +211,7 @@ export const projects = [
     id: 'fog-mqtt',
     title: 'IoT Fog Computing with MQTT',
     summary:
-      'Exploration of Raspberry Pi-based fog nodes and Mosquitto MQTT messaging for preprocessing data from connected IoT devices.',
+      'Raspberry Pi fog nodes with Mosquitto MQTT — preprocessing IoT data close to the devices.',
     category: 'IoT & Embedded',
     technologies: ['Raspberry Pi', 'Python', 'Mosquitto MQTT', 'Edge/Fog Computing'],
     image: '/images/projects/fog-mqtt.jpg',

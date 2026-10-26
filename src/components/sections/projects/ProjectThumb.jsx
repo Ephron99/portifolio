@@ -7,10 +7,10 @@ import { useState } from 'react';
  */
 
 const FALLBACK_ART = {
-  'Java Backend': { from: '#0f1e3c', to: '#2e57a3', glyph: '⌘' },
-  'Web Development': { from: '#083344', to: '#0891b2', glyph: '⌁' },
-  'IoT & Embedded': { from: '#134e4a', to: '#0d9488', glyph: '◈' },
-  'Academic Research': { from: '#1e1b4b', to: '#4f46e5', glyph: '∿' },
+  'Java Backend': { from: '#0f1e3c', to: '#2e57a3' },
+  'Web Development': { from: '#12284c', to: '#8c6d3f' },
+  'IoT & Embedded': { from: '#0d1b33', to: '#4071bf' },
+  'Academic Research': { from: '#081226', to: '#274685' },
 };
 
 function initials(title) {
@@ -70,9 +70,9 @@ export default function ProjectThumb({ project }) {
         x="200"
         y="105"
         textAnchor="middle"
-        fontFamily="JetBrains Mono, monospace"
+        fontFamily="Georgia, 'Times New Roman', serif"
         fontSize="42"
-        fontWeight="700"
+        fontWeight="600"
         fill="rgba(255,255,255,0.92)"
       >
         {initials(project.title)}
@@ -82,8 +82,9 @@ export default function ProjectThumb({ project }) {
         y="135"
         textAnchor="middle"
         fontFamily="Inter, sans-serif"
-        fontSize="13"
-        fill="rgba(255,255,255,0.65)"
+        fontSize="11"
+        letterSpacing="2"
+        fill="rgba(213,188,138,0.85)"
       >
         {project.category}
       </text>

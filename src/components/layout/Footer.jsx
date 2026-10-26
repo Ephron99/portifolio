@@ -10,10 +10,12 @@ export default function Footer() {
       <div className="section-container flex flex-col items-center gap-6 text-center">
         <a
           href="#home"
-          className="font-mono text-sm font-semibold text-navy-900 hover:text-accent-deep dark:text-white dark:hover:text-accent-soft"
+          className="font-serif text-base font-semibold text-navy-900 hover:text-accent-deep dark:text-white dark:hover:text-accent-soft"
         >
           {profile.name}
         </a>
+
+        <span className="h-px w-16 bg-accent/50" aria-hidden="true" />
 
         <nav aria-label="Footer navigation">
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm">

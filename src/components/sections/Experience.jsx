@@ -11,9 +11,9 @@ export default function ExperienceSection() {
   return (
     <Section
       id="experience"
-      eyebrow="04 · Experience"
+      eyebrow="Experience"
       title="Where I've worked and grown."
-      intro="Industry development roles and classroom training — each taught me a different side of software. Click a role to expand the details."
+      intro="Industry development roles and classroom training — each taught me a different side of software. Click a role to expand."
       className="bg-navy-50/50 dark:bg-navy-900/30"
     >
       <ol className="relative space-y-4 border-l-2 border-navy-200 pl-6 sm:pl-8 dark:border-navy-700">
@@ -47,7 +47,7 @@ export default function ExperienceSection() {
                 >
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <h3 className="text-base font-semibold text-navy-900 dark:text-white">{role}</h3>
+                      <h3 className="font-serif text-base font-semibold text-navy-900 dark:text-white">{role}</h3>
                       {current && (
                         <span className="chip !border-accent/40 !bg-accent/10 !text-accent-deep dark:!text-accent-soft">
                           Current

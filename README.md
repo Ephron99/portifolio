@@ -1,9 +1,10 @@
 # Ephron TWAGIRIMANA — Interactive Software Developer & IoT Portfolio
 
 A modern, responsive, dark/light portfolio built with **React + Vite + Tailwind CSS**,
-with Framer Motion animations and Lucide icons. All personal content (profile, skills,
-projects, experience, education) lives in plain data files — update the site without
-touching components.
+with Framer Motion animations and Lucide icons. Classic editorial design: deep navy,
+white and muted gold, with Playfair Display headings. All personal content (profile,
+skills, projects, experience, education) lives in plain data files — update the site
+without touching components.
 
 ---
 
@@ -30,7 +31,7 @@ Requires Node.js 18+.
 └── src/
     ├── main.jsx               # app entry (MotionConfig reduced-motion)
     ├── App.jsx                # page composition + skip link
-    ├── index.css              # design system: navy/cyan palette, buttons, cards, inputs
+    ├── index.css              # design system: navy palette, gold accents, serif headings
     ├── data/                  # ★ ALL EDITABLE CONTENT LIVES HERE
     │   ├── profile.js         #   name, titles, contact, links, CV path, photo
     │   ├── skills.js          #   skill categories & technologies

@@ -20,13 +20,14 @@ export default {
           950: '#081226',
         },
         accent: {
-          DEFAULT: '#06b6d4', // cyan-500
-          soft: '#67e8f9',
-          deep: '#0891b2',
+          DEFAULT: '#b7955b', // muted classic gold
+          soft: '#d5bc8a',
+          deep: '#8c6d3f',
         },
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'Cambria', 'serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'Cascadia Code', 'Consolas', 'monospace'],
       },
       animation: {
