@@ -20,20 +20,7 @@ export const experience = [
     ],
     tags: ['Java', 'MySQL', 'Web Applications', 'Maintenance'],
   },
-  {
-    id: 'katheos',
-    company: 'Katheos Ltd',
-    role: 'Software Developer Intern',
-    period: '', // ⚠️ Add your dates here (editable)
-    location: 'Kigali, Rwanda',
-    current: false,
-    highlights: [
-      'Assisted with application development and maintenance.',
-      'Supported database operations, testing, and debugging.',
-      'Collaborated with developers to implement and improve features.',
-    ],
-    tags: ['Development', 'Testing', 'Databases'],
-  },
+  
   {
     id: 'kivu-hills',
     company: 'Kivu Hills Academy',

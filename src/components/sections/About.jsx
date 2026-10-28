@@ -20,7 +20,7 @@ const values = [
   {
     icon: Bug,
     title: 'Problem-solving',
-    text: 'Reproduce, isolate, fix, verify — from gate systems to sensor networks.',
+    text: 'Reproduce, isolate, fix, verify, from gate systems to sensor networks.',
   },
   {
     icon: Code2,
@@ -35,7 +35,7 @@ const values = [
   {
     icon: Lightbulb,
     title: 'Practical innovation',
-    text: 'Prototype small, test early, iterate — ideas count once they run in the real world.',
+    text: 'Prototype small, test early, iterate, ideas count once they run in the real world.',
   },
 ];
 
@@ -53,7 +53,7 @@ export default function About() {
       title="Backend engineer by practice, IoT explorer by curiosity."
       intro={
         <>
-          I build software businesses rely on — Java desktop and web applications with
+          I build software businesses rely on: Java desktop and web applications with
           MySQL-backed data layers, like the E-Visitors platform I develop at{' '}
           <strong className="font-semibold text-navy-900 dark:text-white">SANTECH Ltd</strong>.
           My <strong className="font-semibold text-navy-900 dark:text-white">MSc in IoT Embedded
@@ -126,7 +126,7 @@ export default function About() {
               </h3>
             </div>
             <p className="text-sm leading-relaxed text-navy-600 dark:text-navy-300">
-              To grow as a Java backend engineer designing reliable, maintainable services —
+              To grow as a Java backend engineer designing reliable, maintainable services,
               while applying my IoT knowledge to bring intelligent, connected solutions from
               prototype to production.
             </p>

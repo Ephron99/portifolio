@@ -114,14 +114,14 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: contactStatus.emailReady ? profile.email : 'Add your email in src/data/profile.js',
+      value: contactStatus.emailReady ? profile.email : 'twagirimanaephron1@gmail.com',
       href: contactStatus.emailReady ? `mailto:${profile.email}` : undefined,
       muted: !contactStatus.emailReady,
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: contactStatus.phoneReady ? profile.phone : 'Add your phone in src/data/profile.js',
+      value: contactStatus.phoneReady ? profile.phone : '+250785247164',
       href: contactStatus.phoneReady ? `tel:${profile.phone.replace(/\s+/g, '')}` : undefined,
       muted: !contactStatus.phoneReady,
     },
@@ -129,14 +129,14 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      value: contactStatus.githubReady ? profile.github.replace('https://', '') : 'Add your GitHub URL in src/data/profile.js',
+      value: contactStatus.githubReady ? profile.github.replace('https://', '') : 'https://github.com/Ephron99',
       href: contactStatus.githubReady ? profile.github : undefined,
       muted: !contactStatus.githubReady,
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: contactStatus.linkedinReady ? profile.linkedin.replace('https://', '') : 'Add your LinkedIn URL in src/data/profile.js',
+      value: contactStatus.linkedinReady ? profile.linkedin.replace('https://', '') : 'www.linkedin.com/in/ephron-twagirimana-573158221',
       href: contactStatus.linkedinReady ? profile.linkedin : undefined,
       muted: !contactStatus.linkedinReady,
     },
@@ -202,11 +202,11 @@ export default function Contact() {
             <p className="mb-5 flex items-start gap-2 rounded-lg border border-amber-300/60 bg-amber-50 p-3 text-xs leading-relaxed text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300">
               <Info size={14} className="mt-0.5 shrink-0" aria-hidden="true" />
               <span>
-                Message delivery is not connected yet. Set{' '}
+                {/* Message delivery is not connected yet. Set{' '}
                 <code className="font-mono">VITE_CONTACT_ENDPOINT</code> or{' '}
                 <code className="font-mono">VITE_FORMSPREE_ENDPOINT</code> in a <code className="font-mono">.env</code>{' '}
                 file (see <code className="font-mono">.env.example</code>). Until then, submitting opens your email app
-                with the message prepared.
+                with the message prepared. */}
               </span>
             </p>
           )}

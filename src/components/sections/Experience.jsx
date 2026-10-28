@@ -63,7 +63,7 @@ export default function ExperienceSection() {
                         <CalendarRange size={14} aria-hidden="true" />
                         {period || (
                           <em className="text-navy-400 dark:text-navy-500">
-                            Add dates in src/data/experience.js
+                           Nov  2024 to OCT 2026
                           </em>
                         )}
                       </span>

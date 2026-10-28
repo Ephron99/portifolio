@@ -6,11 +6,13 @@ import { useTypingWords } from '../../hooks/useTypingWords';
 import { useCvStatus } from '../../utils/useCvStatus';
 import { profile, contactStatus } from '../../data/profile';
 
+
 export default function Hero() {
   const typed = useTypingWords(profile.titles);
   const cv = useCvStatus();
   const [cvNotice, setCvNotice] = useState(false);
   const [imgError, setImgError] = useState(false);
+  const photo = "/images/twagirimana-ephron.jpg";
 
   const fade = (delay) => ({
     initial: { opacity: 0, y: 20 },
@@ -114,7 +116,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub profile"
-                title={contactStatus.githubReady ? 'GitHub' : 'Add your GitHub URL in src/data/profile.js'}
+                title={contactStatus.githubReady ? 'GitHub' : 'https://github.com/Ephron99'}
                 className={`flex h-10 w-10 items-center justify-center rounded-md border border-navy-200 text-navy-600 transition-colors hover:border-accent hover:text-accent-deep dark:border-navy-700 dark:text-navy-300 dark:hover:text-accent-soft ${
                   contactStatus.githubReady ? '' : 'opacity-40'
                 }`}
@@ -141,7 +143,7 @@ export default function Hero() {
               <a
                 href={contactStatus.emailReady ? `mailto:${profile.email}` : '#contact'}
                 aria-label="Contact by email"
-                title={contactStatus.emailReady ? profile.email : 'Add your email in src/data/profile.js'}
+                title={contactStatus.emailReady ? profile.email : 'twagirimanaephron1@gmail.com'}
                 className="flex h-10 w-10 items-center justify-center rounded-md border border-navy-200 text-navy-600 transition-colors hover:border-accent hover:text-accent-deep dark:border-navy-700 dark:text-navy-300 dark:hover:text-accent-soft"
               >
                 <Mail size={17} aria-hidden="true" />
@@ -168,9 +170,10 @@ export default function Hero() {
                   ET
                 </span>
                 <p className="text-xs uppercase tracking-widest text-navy-400 dark:text-navy-500">
-                  Photo placeholder
+                  <img src={photo} alt="Twagirimana Ephron" />
+
                   <br />
-                  <span className="font-mono normal-case tracking-normal">public/images/profile.jpg</span>
+                  <span className="font-mono normal-case tracking-normal"><img src="/images/twagirimana ephron.jpg" alt="Twagirimana Ephron" /></span>
                 </p>
               </div>
             ) : (

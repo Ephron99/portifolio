@@ -37,7 +37,7 @@ export default function Footer() {
             <a
               href={contactStatus.githubReady ? profile.github : undefined}
               aria-disabled={!contactStatus.githubReady}
-              title={contactStatus.githubReady ? 'GitHub profile' : 'Add your GitHub URL in src/data/profile.js'}
+              title={contactStatus.githubReady ? 'GitHub profile' : 'https://github.com/Ephron99'}
               target="_blank"
               rel="noreferrer"
               className={`flex h-9 w-9 items-center justify-center rounded-lg border border-navy-200 text-navy-600 transition-colors hover:border-accent hover:text-accent-deep dark:border-navy-700 dark:text-navy-300 dark:hover:text-accent-soft ${
@@ -52,7 +52,7 @@ export default function Footer() {
             <a
               href={contactStatus.linkedinReady ? profile.linkedin : undefined}
               aria-disabled={!contactStatus.linkedinReady}
-              title={contactStatus.linkedinReady ? 'LinkedIn profile' : 'Add your LinkedIn URL in src/data/profile.js'}
+              title={contactStatus.linkedinReady ? 'LinkedIn profile' : 'www.linkedin.com/in/ephron-twagirimana-573158221'}
               target="_blank"
               rel="noreferrer"
               className={`flex h-9 w-9 items-center justify-center rounded-lg border border-navy-200 text-navy-600 transition-colors hover:border-accent hover:text-accent-deep dark:border-navy-700 dark:text-navy-300 dark:hover:text-accent-soft ${
@@ -67,7 +67,7 @@ export default function Footer() {
             <a
               href={contactStatus.emailReady ? `mailto:${profile.email}` : undefined}
               aria-disabled={!contactStatus.emailReady}
-              title={contactStatus.emailReady ? profile.email : 'Add your email in src/data/profile.js'}
+              title={contactStatus.emailReady ? profile.email : 'twagirimanaephron1@gmail.com'}
               className={`flex h-9 w-9 items-center justify-center rounded-lg border border-navy-200 text-navy-600 transition-colors hover:border-accent hover:text-accent-deep dark:border-navy-700 dark:text-navy-300 dark:hover:text-accent-soft ${
                 contactStatus.emailReady ? '' : 'pointer-events-none opacity-40'
               }`}
@@ -84,7 +84,7 @@ export default function Footer() {
         </p>
 
         <p className="text-xs text-navy-500 dark:text-navy-400">
-          © {year} {profile.name}. Built with React, Vite &amp; Tailwind CSS.
+          © {year} {profile.name}. 
         </p>
       </div>
     </footer>

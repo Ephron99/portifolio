@@ -8,7 +8,7 @@ export default function Skills() {
       id="skills"
       eyebrow="Skills"
       title="The technologies I work with."
-      intro="Grouped by domain — everything here is something I can discuss in depth and demonstrate in code."
+      intro="Grouped by domain, everything here is something I can discuss in depth and demonstrate in code."
       className="bg-navy-50/50 dark:bg-navy-900/30"
     >
       <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">

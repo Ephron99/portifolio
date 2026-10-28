@@ -14,9 +14,9 @@ export const education = [
   },
   {
     id: 'a0-ict',
-    degree: 'A0 in Information and Communication Technology',
+    degree: 'A0 in Computer Science',
     school: 'University of Rwanda',
-    period: '', // ⚠️ Add your graduation year when you want it displayed (editable)
+    period: '2018 to 2023 ', // ⚠️ Add your graduation year when you want it displayed (editable)
     status: 'Completed',
     note: 'Foundational studies in information and communication technology.',
   },

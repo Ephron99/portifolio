@@ -69,7 +69,7 @@ export const projects = [
         },
       ],
       links: {
-        source: null, // add your GitHub URL when the repo is public
+        source: 'https://github.com/Ephron99/E-VISITORS', // add your GitHub URL when the repo is public
         demo: null,
       },
     },
@@ -115,8 +115,8 @@ export const projects = [
         },
       ],
       links: {
-        source: null, // add GitHub URL when available
-        demo: null,   // add live URL when available
+        source: 'https://github.com/Ephron99/Voltage-Drop', // add GitHub URL when available
+        demo: 'https://voltage-drop-iota.vercel.app/',   // add live URL when available
       },
     },
   },

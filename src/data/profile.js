@@ -23,8 +23,8 @@ export const profile = {
   phone: '', // e.g. '+250 7X XXX XXXX' — left empty until provided
 
   // ⚠️ REPLACE with your real profile URLs.
-  github: 'https://github.com/your-github-username',
-  linkedin: 'https://www.linkedin.com/in/your-linkedin-handle',
+  github: 'https://github.com/Ephron99',
+  linkedin: 'www.linkedin.com/in/ephron-twagirimana-573158221',
 
   // CV download: put your PDF at `public/cv/Ephron_Twagirimana_CV.pdf`.
   // Update this path (or the label) if you rename the file.
